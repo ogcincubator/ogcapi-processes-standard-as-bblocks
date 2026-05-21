@@ -1,0 +1,10 @@
+# NOTE: 'id' and 'method' are proposed extensions to the tests.yaml format.
+# See requirements/core/tests.yaml for a full explanation of both gaps.
+
+- id: json-content-type
+  ref: tests/json-content-type.json
+  method: >
+    Issue an HTTP GET request to each of the following paths: `/`, `/conformance`,
+    `/processes`, `/processes/{processID}`, `/jobs/{jobID}`. Validate that each
+    response includes `Content-Type: application/json` (or a subtype thereof) when
+    the request carries `Accept: application/json`.

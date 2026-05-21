@@ -1,0 +1,88 @@
+# Requirements class: Core
+# Class URI: http://www.opengis.net/spec/ogcapi-processes-1/2.0/req/core
+# (derived from standard.yaml base-uri + req-uri-template with id=core)
+#
+# This file covers the process-list requirement group only (PoC scope).
+# The full core class has 55 requirements; remaining requirements TBD.
+
+standardization-target: Web API
+
+depends-on:
+  # Normative document dependencies (RFC/OGC standard references, not BB dependencies)
+  - uri: http://www.opengis.net/spec/ogcapi_common-1/1.0/req/core
+    title: "OGC API — Common — Part 1: Core"
+
+requirements:
+
+  - id: core/process-list-op
+    # Full URI: http://www.opengis.net/spec/ogcapi-processes-1/2.0/req/core/process-list-op
+    level: SHALL
+    statement: >
+      The server SHALL support the HTTP GET operation at the path `/processes`.
+    applies-to:
+      bblock: ogc.api.processes.v1.paths.ProcessList
+    # tested-by using filename reference (current tests.yaml schema style)
+    tested-by:
+      - process-list-success.json
+
+  - id: core/process-list-success
+    level: SHALL
+    statement: >
+      A successful execution of the operation at path `/processes` SHALL be reported as a
+      response with HTTP status code `200`. The content of that response SHALL conform to the
+      [processList](bblocks://ogc.api.processes.v1.schemas.processList) schema.
+    applies-to:
+      bblock: ogc.api.processes.v1.schemas.processList
+      json-path: $
+    # tested-by using id references (proposed extension — matches 'id' field in tests.yaml).
+    # The generator resolves these by looking up the id in tests.yaml first; if not found,
+    # it falls back to treating the value as a filename (with or without extension).
+    tested-by:
+      - process-list-success
+      - process-list-no-links-fail
+
+  - id: core/pl-links
+    level: SHALL
+    statement: >
+      A `200`-response to the operation at path `/processes` SHALL include the following links:
+      a link to this response document (relation: `self`), and a link to the response document
+      in every other media type supported by the server (relation: `alternate`).
+    applies-to:
+      bblock: ogc.api.processes.v1.schemas.processList
+      json-path: $.links
+    tested-by:
+      - process-list-success
+      - process-list-no-links-fail
+
+  - id: core/pl-limit-definition
+    level: SHALL
+    statement: >
+      The operation at path `/processes` SHALL support a parameter `limit` with the following
+      characteristics: type integer, minimum 1, maximum 10000, default 10, query parameter,
+      not required, form style, not exploded.
+    applies-to:
+      bblock: ogc.api.processes.v1.paths.ProcessList
+    tested-by:
+      - process-list-success.json
+
+  - id: core/pl-limit-response
+    level: SHALL
+    statement: >
+      The response SHALL not contain more process summaries than specified by the optional
+      `limit` parameter. If the API definition specifies a maximum value for the `limit`
+      parameter, the response SHALL not contain more process summaries than this maximum value.
+    applies-to:
+      bblock: ogc.api.processes.v1.schemas.processList
+      json-path: $.processes
+    tested-by:
+      - process-list-success.json
+
+  - id: core/test-process
+    level: SHALL
+    condition: >
+      When the server is being tested using OGC CITE tests
+    statement: >
+      The server SHALL offer at least one testable process.
+    note: >
+      See Recommendation A.1 for guidance on what constitutes a testable process suitable
+      for CITE conformance testing.

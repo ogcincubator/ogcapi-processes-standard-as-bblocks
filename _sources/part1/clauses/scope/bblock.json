@@ -1,0 +1,11 @@
+{
+  "name": "Scope",
+  "abstract": "Scope clause for OGC API — Processes Part 1: Core.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-05-21T00:00:00Z",
+  "itemClass": "clause",
+  "version": "2.0.0",
+  "clause-index": 1,
+  "normative": true,
+  "tags": ["ogcapi-processes", "standard", "clause"]
+}

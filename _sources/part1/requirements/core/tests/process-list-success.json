@@ -1,0 +1,52 @@
+{
+  "processes": [
+    {
+      "id": "EchoProcess",
+      "title": "EchoProcess",
+      "version": "1.0.0",
+      "jobControlOptions": [
+        "sync-execute",
+        "async-execute"
+      ],
+      "links": [
+        {
+          "href": "https://processing.example.org/processes/EchoProcess",
+          "rel": "self",
+          "type": "application/json",
+          "title": "Process description"
+        }
+      ]
+    },
+    {
+      "id": "BufferProcess",
+      "title": "Buffer",
+      "description": "Creates a buffer polygon around each input geometry.",
+      "version": "2.1.0",
+      "jobControlOptions": [
+        "sync-execute"
+      ],
+      "links": [
+        {
+          "href": "https://processing.example.org/processes/BufferProcess",
+          "rel": "self",
+          "type": "application/json",
+          "title": "Process description"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "https://processing.example.org/processes?f=json",
+      "rel": "self",
+      "type": "application/json",
+      "title": "This document"
+    },
+    {
+      "href": "https://processing.example.org/processes?f=html",
+      "rel": "alternate",
+      "type": "text/html",
+      "title": "This document as HTML"
+    }
+  ]
+}

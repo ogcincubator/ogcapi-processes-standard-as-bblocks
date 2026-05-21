@@ -1,0 +1,65 @@
+terms:
+  - term: job
+    definition: >
+      A server-side object created by a processing service for a particular process execution.
+      A job may be latent in the case of synchronous execution or explicit in the case of
+      asynchronous execution. Since the client has only oblique access to a processing job,
+      a Job ID is used to monitor and control a job.
+
+  - term: process
+    definition: >
+      A function p: X → Y where X denotes the domain of arguments (process inputs) and Y denotes
+      the co-domain of values (process outputs). Used as an umbrella term for any algorithm,
+      calculation or model that either generates new data or transforms some input data into output
+      data, as defined in section 4.1 of the OGC WPS 2.0 standard.
+    sources:
+      - title: OGC WPS 2.0
+        uri: https://docs.ogc.org/is/14-065/14-065.html
+
+  - term: process description
+    definition: >
+      An information model that specifies the interface of a process. Used for a machine-readable
+      description of the process itself but also provides some basic information about the process
+      inputs and outputs.
+
+  - term: process execution
+    definition: >
+      An action that calculates the outputs of a given process for a given set of data inputs.
+
+  - term: process input
+    definition: >
+      An argument of a process; data provided to a process. Each process input is an identifiable
+      item.
+
+  - term: process output
+    definition: >
+      A result of a process; data returned by a process. Each process output is an identifiable
+      item.
+
+  - term: process offering
+    definition: >
+      An identifiable process that may be executed on a particular service instance. A process
+      offering contains a process description as well as service-specific information about the
+      supported execution protocols.
+
+  - term: REST
+    definition: >
+      The Representational State Transfer architectural style. An abstraction of the architectural
+      elements within a distributed hypermedia system. An API that conforms to REST
+      architectural principles is called a RESTful API.
+    sources:
+      - title: OGC 18-088
+        uri: https://docs.ogc.org/is/18-088/18-088.html
+
+abbreviated-terms:
+  API: Application Programming Interface
+  CITE: Compliance Interoperability & Testing Evaluation
+  CRS: Coordinate Reference System
+  HTTP: Hypertext Transfer Protocol
+  JSON: JavaScript Object Notation
+  KVP: Key-Value Pair
+  OGC: Open Geospatial Consortium
+  REST: Representational State Transfer
+  URI: Uniform Resource Identifier
+  URL: Uniform Resource Locator
+  WPS: Web Processing Service

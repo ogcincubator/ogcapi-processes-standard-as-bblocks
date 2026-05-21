@@ -1,0 +1,63 @@
+normative:
+  - title: "OpenAPI Specification 3.0"
+    doc-id: OAS 3.0
+    uri: http://spec.openapis.org/oas/v3.0.4
+    date: "2020"
+
+  - title: "OpenAPI Specification 3.1"
+    doc-id: OAS 3.1
+    uri: http://spec.openapis.org/oas/v3.1.1
+    date: "2021"
+
+  - title: "RFC 6906: The 'profile' Link Relation Type"
+    doc-id: IETF RFC 6906
+    uri: https://datatracker.ietf.org/doc/html/rfc6906
+    date: "2013"
+
+  - title: "RFC 2818: HTTP Over TLS"
+    doc-id: IETF RFC 2818
+    uri: https://www.rfc-editor.org/rfc/rfc2818
+    date: "2000"
+
+  - title: "RFC 3339: Date and Time on the Internet: Timestamps"
+    doc-id: IETF RFC 3339
+    uri: https://www.rfc-editor.org/rfc/rfc3339
+    date: "2002"
+
+  - title: "RFC 8288: Web Linking"
+    doc-id: IETF RFC 8288
+    uri: https://www.rfc-editor.org/rfc/rfc8288
+    date: "2017"
+
+  - title: "RFC 9110: HTTP Semantics"
+    doc-id: IETF RFC 9110
+    uri: https://www.rfc-editor.org/rfc/rfc9110
+    date: "2022"
+
+  - title: "RFC 9112: HTTP/1.1"
+    doc-id: IETF RFC 9112
+    uri: https://www.rfc-editor.org/rfc/rfc9112
+    date: "2022"
+
+  - title: "RFC 9457: Problem Details for HTTP APIs"
+    doc-id: IETF RFC 9457
+    uri: https://www.rfc-editor.org/rfc/rfc9457
+    date: "2023"
+
+  - title: "RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format"
+    doc-id: IETF RFC 8259
+    uri: https://tools.ietf.org/html/rfc8259
+    date: "2017"
+
+  - title: "JSON Schema Validation: A Vocabulary for Structural Validation of JSON"
+    doc-id: JSON Schema Validation
+    uri: https://json-schema.org/draft/2020-12/json-schema-validation.html
+
+  - title: "OGC 08-131r3 — The Specification Model — A Standard for Modular Specifications"
+    doc-id: OGC 08-131r3
+    uri: https://portal.ogc.org/files/?artifact_id=34762
+
+  - title: "OGC 14-065 — OGC WPS 2.0 Interface Standard"
+    doc-id: OGC 14-065
+    uri: https://docs.ogc.org/is/14-065/14-065.html
+    date: "2015"

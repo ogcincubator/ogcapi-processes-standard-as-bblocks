@@ -1,0 +1,24 @@
+# Requirements class: JSON
+# Class URI: http://www.opengis.net/spec/ogcapi-processes-1/2.0/req/json
+# (derived from standard.yaml base-uri + req-uri-template with id=json)
+
+standardization-target: Web API
+
+depends-on:
+  - bblock: ogc.api.processes.part1.requirements.core
+
+requirements:
+
+  - id: json/definition
+    # Full URI: http://www.opengis.net/spec/ogcapi-processes-1/2.0/req/json/definition
+    level: SHALL
+    statement: >
+      `200`-responses of the server SHALL support the media type `application/json`
+      for all supported API endpoints, including: `/` (landing page),
+      `/conformance`, `/processes`, `/processes/{processID}`, and `/jobs/{jobID}`.
+    note: >
+      Responses from the execution endpoint `/processes/{processID}/execution` may or may
+      not generate JSON depending on the process being executed, the negotiated execution
+      mode, the negotiated response format, and the number of requested outputs.
+    tested-by:
+      - json-content-type.json

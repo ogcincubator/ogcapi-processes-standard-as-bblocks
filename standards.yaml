@@ -1,0 +1,48 @@
+standards:
+
+  - prefix: ogc.api.processes.part1
+    title: "OGC API - Processes - Part 1: Core"
+    doc-number: OGC 18-062r3
+    type: Standard
+    status: Draft
+    version: "2.0.0"
+    pub-date: null
+    base-uri: http://www.opengis.net/spec/ogcapi-processes-1/2.0
+
+    req-uri-template:  "{base-uri}/{status}req/{id}"
+    conf-uri-template: "{base-uri}/{status}conf/{id}"
+
+    editors:
+      - name: Benjamin Pross
+        affiliation: 52°North GmbH
+      - name: Panagiotis (Peter) A. Vretanos
+        affiliation: CubeWerx Inc.
+
+    wg: WPS SWG
+    keywords:
+      - OGC API
+      - processes
+      - geospatial
+      - web processing
+
+    abstract: |
+      The OGC API — Processes Standard specifies a Web API that enables the execution of computing
+      processes, the retrieval of metadata describing their purpose and functionality and the retrieval
+      of the results of the process execution. The requirements specified in the OGC API — Processes
+      Standard build on the OGC Web Processing Service (WPS) 2.0 Standard and specify a processing
+      interface to communicate over a RESTful protocol using JSON encodings.
+
+    clauses:
+      - bblock: ogc.api.processes.part1.clauses.scope
+      - auto: conformance
+      - bblock: ogc.api.processes.part1.clauses.references
+      - bblock: ogc.api.processes.part1.clauses.terms
+      - bblock: ogc.api.processes.part1.clauses.conventions
+      - bblock: ogc.api.processes.part1.requirements.core
+      - bblock: ogc.api.processes.part1.requirements.json
+      - auto: annex-a
+
+    boilerplate:
+      patent-policy: OGC RF
+      copyright-year: 2026
+      license: OGC Document Notice
