@@ -1,0 +1,32 @@
+
+
+{
+  "itemIdentifier": "ogc.api.processes.part1.clauses.terms",
+  "name": "Terms and Definitions",
+  "abstract": "Terms, definitions and abbreviated terms for OGC API \u2014 Processes Part 1: Core.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-05-21T00:00:00Z",
+  "itemClass": "terms",
+  "version": "2.0.0",
+  "clause-index": 4,
+  "normative": true,
+  "tags": [
+    "ogcapi-processes",
+    "standard",
+    "clause"
+  ],
+  "resources": [
+    {
+      "ref": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/terms/terms.yaml",
+      "role": "terms",
+      "format": "application/yaml"
+    }
+  ],
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-05-21",
+  "sourceFiles": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/terms/",
+  "validationPassed": true,
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/ogcincubator/ogcapi-processes-standard-as-bblocks",
+  "gitPath": "_sources/part1/clauses/terms"
+}

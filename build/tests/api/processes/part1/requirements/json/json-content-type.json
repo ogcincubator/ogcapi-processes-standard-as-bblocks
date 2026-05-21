@@ -1,0 +1,33 @@
+{
+  "_comment": "This test resource represents a valid application/json response from /processes. The test verifies that the server serves this media type. Schema validation against processList is performed separately by the core/process-list-success test.",
+  "processes": [
+    {
+      "id": "EchoProcess",
+      "title": "EchoProcess",
+      "version": "1.0.0",
+      "jobControlOptions": [
+        "sync-execute",
+        "async-execute"
+      ],
+      "links": [
+        {
+          "href": "https://processing.example.org/processes/EchoProcess",
+          "rel": "self",
+          "type": "application/json"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "href": "https://processing.example.org/processes?f=json",
+      "rel": "self",
+      "type": "application/json"
+    },
+    {
+      "href": "https://processing.example.org/processes?f=html",
+      "rel": "alternate",
+      "type": "text/html"
+    }
+  ]
+}

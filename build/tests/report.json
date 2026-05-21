@@ -1,27 +1,83 @@
 {
   "summary": {
-    "total": 2,
-    "passed": 2,
-    "failed": 0,
-    "result": true
+    "total": 6,
+    "passed": 5,
+    "failed": 1,
+    "result": false
   },
   "bblocks": {
-    "ogc.bbr.template.mySchema": {
-      "title": "Validation report for ogc.bbr.template.mySchema - My Schema",
-      "bblockName": "My Schema",
-      "bblockId": "ogc.bbr.template.mySchema",
-      "generated": "2026-05-07T11:37:22.445898+00:00",
+    "ogc.api.processes.part1.clauses.conventions": {
+      "title": "Validation report for ogc.api.processes.part1.clauses.conventions - Conventions",
+      "bblockName": "Conventions",
+      "bblockId": "ogc.api.processes.part1.clauses.conventions",
+      "generated": "2026-05-21T23:41:54.084116+00:00",
       "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.processes.part1.clauses.references": {
+      "title": "Validation report for ogc.api.processes.part1.clauses.references - Normative References",
+      "bblockName": "Normative References",
+      "bblockId": "ogc.api.processes.part1.clauses.references",
+      "generated": "2026-05-21T23:41:54.087319+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.processes.part1.clauses.scope": {
+      "title": "Validation report for ogc.api.processes.part1.clauses.scope - Scope",
+      "bblockName": "Scope",
+      "bblockId": "ogc.api.processes.part1.clauses.scope",
+      "generated": "2026-05-21T23:41:54.090178+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.processes.part1.clauses.terms": {
+      "title": "Validation report for ogc.api.processes.part1.clauses.terms - Terms and Definitions",
+      "bblockName": "Terms and Definitions",
+      "bblockId": "ogc.api.processes.part1.clauses.terms",
+      "generated": "2026-05-21T23:41:54.093335+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "ogc.api.processes.part1.requirements.core": {
+      "title": "Validation report for ogc.api.processes.part1.requirements.core - Core",
+      "bblockName": "Core",
+      "bblockId": "ogc.api.processes.part1.requirements.core",
+      "generated": "2026-05-21T23:41:54.102735+00:00",
+      "result": false,
       "items": [
         {
           "source": {
             "type": "TEST_RESOURCE",
             "requireFail": true,
-            "filename": "_sources/mySchema/tests/rules-fail.json",
-            "url": "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/tests/rules-fail.json",
+            "filename": "_sources/part1/requirements/core/tests/process-list-no-links-fail.json",
+            "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/core/tests/process-list-no-links-fail.json",
             "language": "json"
           },
-          "result": true,
+          "result": false,
           "sections": [
             {
               "name": "GENERAL",
@@ -29,8 +85,8 @@
               "entries": [
                 {
                   "op": "require-fail",
-                  "isError": false,
-                  "message": "Test was expected to fail and it did."
+                  "isError": true,
+                  "message": "Test was expected to fail but it did not."
                 }
               ]
             },
@@ -40,63 +96,84 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using rules-fail.json from test resources"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "rules-fail.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD rules-fail.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "rules-fail.ttl",
-                  "size": 3,
-                  "isError": false,
-                  "message": "Output Turtle rules-fail.ttl created"
+                  "message": "Using process-list-no-links-fail.json from test resources"
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": false,
+            "filename": "_sources/part1/requirements/core/tests/process-list-success.json",
+            "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/core/tests/process-list-success.json",
+            "language": "json"
+          },
+          "result": true,
+          "sections": [
             {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
+              "name": "FILES",
+              "title": "Files",
               "entries": [
                 {
-                  "op": "validation",
-                  "result": true,
                   "isError": false,
-                  "message": "Validation passed"
+                  "message": "Using process-list-success.json from test resources"
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": false,
+            "filename": "_sources/part1/requirements/core/tests/process-list-success.json",
+            "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/core/tests/process-list-success.json",
+            "language": "json"
+          },
+          "result": true,
+          "sections": [
             {
-              "name": "SHACL",
-              "title": "SHACL",
+              "name": "FILES",
+              "title": "Files",
               "entries": [
                 {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/mySchema/shapes.shacl",
-                  "graph": "@prefix mynamespace: <http://example.org/ns1/> .\n@prefix ns1: <https://example.org/my-bb-model/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode [ a mynamespace:aThing ;\n                    ns1:b 23 ;\n                    ns1:c 2.55e+01 ] ;\n            sh:resultMessage \"Value of [ ns1:b Literal(\\\"23\\\", datatype=xsd:integer) ; ns1:c Literal(\\\"25.5\\\", datatype=xsd:double) ; rdf:type mynamespace:aThing ]->ns1:b <= Literal(\\\"25.5\\\", datatype=xsd:double)\" ;\n            sh:resultPath ns1:c ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:LessThanConstraintComponent ;\n            sh:sourceShape [ sh:lessThan ns1:b ;\n                    sh:path ns1:c ] ;\n            sh:value 2.55e+01 ] .\n\n",
+                  "isError": false,
+                  "message": "Using process-list-success.json from test resources"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": true,
+            "filename": "_sources/part1/requirements/core/tests/process-list-no-links-fail.json",
+            "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/core/tests/process-list-no-links-fail.json",
+            "language": "json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "GENERAL",
+              "title": "General",
+              "entries": [
+                {
+                  "op": "require-fail",
                   "isError": true,
-                  "message": "Validation result for _sources/mySchema/shapes.shacl:\n  Validation Report\n  Conforms: False\n  Results (1):\n  Constraint Violation in LessThanConstraintComponent (http://www.w3.org/ns/shacl#LessThanConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: [ sh:lessThan ns1:b ; sh:path ns1:c ]\n  \tFocus Node: [ ns1:b Literal(\"23\", datatype=xsd:integer) ; ns1:c Literal(\"25.5\", datatype=xsd:double) ; rdf:type mynamespace:aThing ]\n  \tValue Node: Literal(\"25.5\", datatype=xsd:double)\n  \tResult Path: ns1:c\n  \tMessage: Value of [ ns1:b Literal(\"23\", datatype=xsd:integer) ; ns1:c Literal(\"25.5\", datatype=xsd:double) ; rdf:type mynamespace:aThing ]->ns1:b <= Literal(\"25.5\", datatype=xsd:double)\n  "
-                },
+                  "message": "Test was expected to fail but it did not."
+                }
+              ]
+            },
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
                 {
-                  "shaclFile": "_sources/mySchema/shapes.shacl",
-                  "focusNodes": {
-                    "<https://www.ogc.org/rules/template/#testValues>": {
-                      "nodes": [
-                        "_:N7a2da5c3e2d64c859f844e5d7fffc6da"
-                      ]
-                    }
-                  },
                   "isError": false,
-                  "message": "Focus nodes for _sources/mySchema/shapes.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: _:N7a2da5c3e2d64c859f844e5d7fffc6da\n"
+                  "message": "Using process-list-no-links-fail.json from test resources"
                 }
               ]
             }
@@ -106,8 +183,8 @@
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/bbr/template/mySchema/example_1_1.json",
-            "url": "https://opengeospatial.github.io/bblocks-template/build/tests/bbr/template/mySchema/example_1_1.json",
+            "filename": "build/tests/api/processes/part1/requirements/core/example_1_1.json",
+            "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/tests/api/processes/part1/requirements/core/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -120,61 +197,93 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using example.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 3,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
+                  "message": "Using examples/ProcessList.json from examples"
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/api/processes/part1/requirements/core/example_2_1.json",
+            "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/tests/api/processes/part1/requirements/core/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
             {
               "name": "JSON_SCHEMA",
               "title": "JSON Schema",
               "entries": [
                 {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
+                  "exception": "JSONDecodeError",
+                  "line": 162,
+                  "col": 7,
+                  "isError": true,
+                  "message": "Error parsing JSON example: Expecting ',' delimiter: line 162 column 7 (char 4876) on or near line 162 column 7"
                 }
               ]
-            },
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 6,
+        "passed": 3,
+        "failed": 3
+      }
+    },
+    "ogc.api.processes.part1.requirements.json": {
+      "title": "Validation report for ogc.api.processes.part1.requirements.json - JSON",
+      "bblockName": "JSON",
+      "bblockId": "ogc.api.processes.part1.requirements.json",
+      "generated": "2026-05-21T23:41:54.110838+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": false,
+            "filename": "_sources/part1/requirements/json/tests/json-content-type.json",
+            "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/json/tests/json-content-type.json",
+            "language": "json"
+          },
+          "result": true,
+          "sections": [
             {
-              "name": "SHACL",
-              "title": "SHACL",
+              "name": "FILES",
+              "title": "Files",
               "entries": [
                 {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/mySchema/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
-                  "message": "Validation result for _sources/mySchema/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
+                  "message": "Using json-content-type.json from test resources"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": false,
+            "filename": "_sources/part1/requirements/json/tests/json-content-type.json",
+            "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/json/tests/json-content-type.json",
+            "language": "json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
                 {
-                  "shaclFile": "_sources/mySchema/shapes.shacl",
-                  "focusNodes": {
-                    "<https://www.ogc.org/rules/template/#testValues>": {
-                      "nodes": []
-                    }
-                  },
                   "isError": false,
-                  "message": "Focus nodes for _sources/mySchema/shapes.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
+                  "message": "Using json-content-type.json from test resources"
                 }
               ]
             }
@@ -185,288 +294,6 @@
       "counts": {
         "total": 2,
         "passed": 2,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.template.myFeature": {
-      "title": "Validation report for ogc.bbr.template.myFeature - Custom Feature",
-      "bblockName": "Custom Feature",
-      "bblockId": "ogc.bbr.template.myFeature",
-      "generated": "2026-05-07T11:37:22.633962+00:00",
-      "result": true,
-      "items": [
-        {
-          "source": {
-            "type": "TEST_RESOURCE",
-            "requireFail": true,
-            "filename": "_sources/myFeature/tests/feature-fail.json",
-            "url": "https://opengeospatial.github.io/bblocks-template/_sources/myFeature/tests/feature-fail.json",
-            "language": "json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "GENERAL",
-              "title": "General",
-              "entries": [
-                {
-                  "op": "require-fail",
-                  "isError": false,
-                  "message": "Test was expected to fail and it did."
-                }
-              ]
-            },
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using feature-fail.json from test resources"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "feature-fail.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD feature-fail.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "feature-fail.ttl",
-                  "size": 16,
-                  "isError": false,
-                  "message": "Output Turtle feature-fail.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": false,
-                  "exception": "ValidationError",
-                  "errorMessage": "{'id': 'f1', 'type': 'Feature', 'geometry': {'type': 'LineString', 'coordinates': [[-111.67183507997295, 40.056709946862874], [-111.71, 40.156709946862875]]}, 'properties': {'notMyProp': 'Mandatory property not present example'}} is not valid under any of the given schemas",
-                  "isError": true,
-                  "message": "ValidationError: {'id': 'f1', 'type': 'Feature', 'geometry': {'type': 'LineString', 'coordinates': [[-111.67183507997295, 40.056709946862874], [-111.71, 40.156709946862875]]}, 'properties': {'notMyProp': 'Mandatory property not present example'}} is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema:\n    {'$defs': {'MyFeature': {'allOf': [{'$ref': 'https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml'},\n                                       {'properties': {'properties': {'$ref': 'https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/schema.yaml'}}}]}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'anyOf': [{'$ref': '#/$defs/MyFeature'}],\n     'description': 'Example of a simple GeoJSON Feature specialisation'}\n\nOn instance:\n    {'geometry': {'coordinates': [[-111.67183507997295, 40.056709946862874],\n                                  [-111.71, 40.156709946862875]],\n                  'type': 'LineString'},\n     'id': 'f1',\n     'properties': {'notMyProp': 'Mandatory property not present example'},\n     'type': 'Feature'}"
-                }
-              ]
-            },
-            {
-              "name": "SHACL",
-              "title": "SHACL",
-              "entries": [
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/mySchema/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/mySchema/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/mySchema/shapes.shacl",
-                  "focusNodes": {
-                    "<https://www.ogc.org/rules/template/#testValues>": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/mySchema/shapes.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "focusNodes": {
-                    "geojson:LinkShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:FeatureShape": {
-                      "nodes": [
-                        "<file:///github/workspace/f1>"
-                      ]
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/f1>\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/template/myFeature/example_1_1.json",
-            "url": "https://opengeospatial.github.io/bblocks-template/build/tests/bbr/template/myFeature/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using examples/feature.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 19,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            },
-            {
-              "name": "SHACL",
-              "title": "SHACL",
-              "entries": [
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "_sources/mySchema/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for _sources/mySchema/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "_sources/mySchema/shapes.shacl",
-                  "focusNodes": {
-                    "<https://www.ogc.org/rules/template/#testValues>": {
-                      "nodes": [
-                        "<http://example.com/features/f1>"
-                      ]
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for _sources/mySchema/shapes.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: <http://example.com/features/f1>\n"
-                },
-                {
-                  "op": "shacl-report",
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "focusNodes": {
-                    "geojson:LinkShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:FeatureShape": {
-                      "nodes": [
-                        "<http://example.com/features/f1>"
-                      ]
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: <http://example.com/features/f1>\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/template/myFeature/example_1_2.yaml",
-            "url": "https://opengeospatial.github.io/bblocks-template/build/tests/bbr/template/myFeature/example_1_2.yaml",
-            "exampleIndex": 1,
-            "snippetIndex": 2,
-            "language": "application/x-yaml"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_1_2.yaml from examples"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 3,
-        "passed": 3,
         "failed": 0
       }
     }

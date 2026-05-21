@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://opengeospatial.github.io/bblocks-template"
+      "@base": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -191,43 +191,107 @@
       }
     }
   ],
-  "name": "Building Blocks - My OGC Building Blocks repository",
-  "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
-  "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2026-05-07T11:37:21.546445",
+  "name": "Building Blocks - OGC API - Processes - Part 1 (Standard as Building Blocks)",
+  "abstract": "OGC API \u2014 Processes Part 1: Core, authored as Building Blocks. This is a proof-of-concept\ndemonstrating the \"OGC Standards as BBs\" methodology, where the standards document is generated\nfrom a set of Building Blocks rather than from AsciiDoc source.\n",
+  "description": "This repository contains the Building Blocks for OGC API \u2014 Processes Part 1: Core (OGC 18-062r3).\nIt demonstrates the [OGC Standards as BBs](https://github.com/opengeospatial/ogcapi-processes/blob/master/docs/ogc-standards-as-bblocks.md)\nproposal, where normative requirements, conformance tests, schemas, and prose are all co-located\nin a Building Block, and the standards document is generated from the BB set.\n\nNew BB types introduced: `requirements-class`, `clause`, `terms`, `references`.\nNew `bblock.json` fields: `clause-index`, `normative`, `standardization-target`.\n",
+  "standards": [
+    {
+      "prefix": "ogc.api.processes.part1",
+      "title": "OGC API - Processes - Part 1: Core",
+      "doc-number": "OGC 18-062r3",
+      "type": "Standard",
+      "status": "Draft",
+      "version": "2.0.0",
+      "pub-date": null,
+      "base-uri": "http://www.opengis.net/spec/ogcapi-processes-1/2.0",
+      "req-uri-template": "{base-uri}/{status}req/{id}",
+      "conf-uri-template": "{base-uri}/{status}conf/{id}",
+      "editors": [
+        {
+          "name": "Benjamin Pross",
+          "affiliation": "52\u00b0North GmbH"
+        },
+        {
+          "name": "Panagiotis (Peter) A. Vretanos",
+          "affiliation": "CubeWerx Inc."
+        }
+      ],
+      "wg": "WPS SWG",
+      "keywords": [
+        "OGC API",
+        "processes",
+        "geospatial",
+        "web processing"
+      ],
+      "abstract": "The OGC API \u2014 Processes Standard specifies a Web API that enables the execution of computing\nprocesses, the retrieval of metadata describing their purpose and functionality and the retrieval\nof the results of the process execution. The requirements specified in the OGC API \u2014 Processes\nStandard build on the OGC Web Processing Service (WPS) 2.0 Standard and specify a processing\ninterface to communicate over a RESTful protocol using JSON encodings.\n",
+      "clauses": [
+        {
+          "bblock": "ogc.api.processes.part1.clauses.scope"
+        },
+        {
+          "auto": "conformance"
+        },
+        {
+          "bblock": "ogc.api.processes.part1.clauses.references"
+        },
+        {
+          "bblock": "ogc.api.processes.part1.clauses.terms"
+        },
+        {
+          "bblock": "ogc.api.processes.part1.clauses.conventions"
+        },
+        {
+          "bblock": "ogc.api.processes.part1.requirements.core"
+        },
+        {
+          "bblock": "ogc.api.processes.part1.requirements.json"
+        },
+        {
+          "auto": "annex-a"
+        }
+      ],
+      "boilerplate": {
+        "patent-policy": "OGC RF",
+        "copyright-year": 2026,
+        "license": "OGC Document Notice"
+      }
+    }
+  ],
+  "modified": "2026-05-21T23:41:53.851833",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"6c782d91e288340ba681da9c977d75a37c22b8b7",
-      "shortCommitId": "\"6c782d",
-      "date": "2026-05-07T11:32:58+00:00\""
+      "commitId": "\"25abca22c897dd633f68c669e182ee84446aa519",
+      "shortCommitId": "\"25abca",
+      "date": "2026-05-21T23:39:18+00:00\""
     }
   },
-  "gitRepository": "https://github.com/opengeospatial/bblocks-template",
-  "gitHubRepository": "https://github.com/opengeospatial/bblocks-template/blob/master/",
-  "baseURL": "https://opengeospatial.github.io/bblocks-template/",
-  "viewerURL": "https://opengeospatial.github.io/bblocks-template/",
-  "validationReport": "https://opengeospatial.github.io/bblocks-template/build/tests/report.html",
-  "validationReportJson": "https://opengeospatial.github.io/bblocks-template/build/tests/report.json",
+  "gitRepository": "https://github.com/ogcincubator/ogcapi-processes-standard-as-bblocks",
+  "gitHubRepository": "https://github.com/ogcincubator/ogcapi-processes-standard-as-bblocks/blob/master/",
+  "baseURL": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/",
+  "viewerURL": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/",
+  "validationReport": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/tests/report.html",
+  "validationReportJson": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/tests/report.json",
   "imports": [
-    "https://opengeospatial.github.io/bblocks/register.json"
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json"
   ],
-  "remoteCacheDir": "https://opengeospatial.github.io/bblocks-template/build/annotated/_cache",
+  "remoteCacheDir": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/bblocks-template/build/register.json",
+      "href": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/bblocks-template/build/bblocks.ttl",
+      "href": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/bblocks-template/build/bblocks.jsonld",
+      "href": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }
@@ -237,205 +301,415 @@
     "dcat:Catalog",
     "bblocks:BBlocksRegister"
   ],
-  "skos:prefLabel": "Building Blocks - My OGC Building Blocks repository",
+  "skos:prefLabel": "Building Blocks - OGC API - Processes - Part 1 (Standard as Building Blocks)",
   "hasConcepts": [
     {
-      "itemIdentifier": "ogc.bbr.template.mySchema",
-      "$schema": "metaschema.yaml",
-      "name": "My Schema",
-      "abstract": "An example schema defining the set of properties of any type of object.",
+      "itemIdentifier": "ogc.api.processes.part1.clauses.conventions",
+      "name": "Conventions",
+      "abstract": "Conventions used throughout OGC API \u2014 Processes Part 1: Core.",
       "status": "under-development",
-      "dateTimeAddition": "2023-04-05T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-register",
-      "version": "0.1",
-      "link": "https://github.com/opengeospatial/bblock-template",
-      "sources": [
-        {
-          "title": "Sample source document",
-          "link": "https://example.com/sources/1"
-        }
-      ],
+      "dateTimeAddition": "2026-05-21T00:00:00Z",
+      "itemClass": "clause",
+      "version": "2.0.0",
+      "clause-index": 5,
+      "normative": true,
       "tags": [
-        "templates"
+        "ogcapi-processes",
+        "standard",
+        "clause"
       ],
-      "shaclShapes": [
-        {
-          "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.bbr.template.mySchema",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        }
-      ],
-      "ldContext": {
-        "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "dateOfLastChange": "2023-04-05",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/schema.yaml",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/context.jsonld",
-      "resolvedSchemaProperties": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/resolvedProperties.json",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/",
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-05-21",
+      "sourceFiles": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/conventions/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks-template/blob/master/build/tests/bbr/template/mySchema/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/json-full/bbr/template/mySchema/index.json"
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/conventions/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/markdown/bbr/template/mySchema/index.md"
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/clauses/conventions/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks-template/bblock/ogc.bbr.template.mySchema"
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.clauses.conventions"
         }
       },
-      "@id": "bblocks://ogc.bbr.template.mySchema",
+      "@id": "bblocks://ogc.api.processes.part1.clauses.conventions",
       "@type": [
-        "bblocks:Schema",
+        "bblocks:Clause",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "My Schema",
+      "skos:prefLabel": "Conventions",
+      "ldContext": null,
+      "schema": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://opengeospatial.github.io/bblocks-template/"
+        "@id": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/"
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.template.myFeature",
-      "name": "Custom Feature",
-      "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
+      "itemIdentifier": "ogc.api.processes.part1.clauses.references",
+      "name": "Normative References",
+      "abstract": "Normative references for OGC API \u2014 Processes Part 1: Core.",
       "status": "under-development",
-      "dateTimeAddition": "2023-05-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "sources": [
-        {
-          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
-          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
-        }
-      ],
-      "dependsOn": [
-        "bblocks://ogc.bbr.template.mySchema",
-        "bblocks://ogc.geo.features.feature"
-      ],
+      "dateTimeAddition": "2026-05-21T00:00:00Z",
+      "itemClass": "references",
+      "version": "2.0.0",
+      "clause-index": 3,
+      "normative": true,
       "tags": [
-        "feature",
-        "examples"
+        "ogcapi-processes",
+        "standard",
+        "clause"
       ],
-      "group": "Examples",
-      "highlighted": true,
-      "shaclShapes": [
+      "resources": [
         {
-          "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.bbr.template.mySchema",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        },
-        {
-          "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
+          "ref": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/references/references.yaml",
+          "role": "references",
+          "format": "application/yaml"
         }
       ],
-      "dateOfLastChange": "2023-05-19",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://opengeospatial.github.io/bblocks-template/_sources/myFeature/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "resolvedSchemaProperties": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/resolvedProperties.json",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks-template/_sources/myFeature/",
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-05-21",
+      "sourceFiles": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/references/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks-template/blob/master/build/tests/bbr/template/myFeature/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/json-full/bbr/template/myFeature/index.json"
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/references/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/markdown/bbr/template/myFeature/index.md"
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/clauses/references/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks-template/bblock/ogc.bbr.template.myFeature"
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.clauses.references"
         }
       },
-      "@id": "bblocks://ogc.bbr.template.myFeature",
+      "@id": "bblocks://ogc.api.processes.part1.clauses.references",
       "@type": [
-        "bblocks:Schema",
+        "bblocks:References",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "Custom Feature",
+      "skos:prefLabel": "Normative References",
+      "ldContext": null,
+      "schema": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.processes.part1.clauses.scope",
+      "name": "Scope",
+      "abstract": "Scope clause for OGC API \u2014 Processes Part 1: Core.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-05-21T00:00:00Z",
+      "itemClass": "clause",
+      "version": "2.0.0",
+      "clause-index": 1,
+      "normative": true,
+      "tags": [
+        "ogcapi-processes",
+        "standard",
+        "clause"
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-05-21",
+      "sourceFiles": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/scope/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/scope/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/clauses/scope/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.clauses.scope"
+        }
+      },
+      "@id": "bblocks://ogc.api.processes.part1.clauses.scope",
+      "@type": [
+        "bblocks:Clause",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Scope",
+      "ldContext": null,
+      "schema": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.processes.part1.clauses.terms",
+      "name": "Terms and Definitions",
+      "abstract": "Terms, definitions and abbreviated terms for OGC API \u2014 Processes Part 1: Core.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-05-21T00:00:00Z",
+      "itemClass": "terms",
+      "version": "2.0.0",
+      "clause-index": 4,
+      "normative": true,
+      "tags": [
+        "ogcapi-processes",
+        "standard",
+        "clause"
+      ],
+      "resources": [
+        {
+          "ref": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/terms/terms.yaml",
+          "role": "terms",
+          "format": "application/yaml"
+        }
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-05-21",
+      "sourceFiles": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/terms/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/terms/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/clauses/terms/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.clauses.terms"
+        }
+      },
+      "@id": "bblocks://ogc.api.processes.part1.clauses.terms",
+      "@type": [
+        "bblocks:Terms",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Terms and Definitions",
+      "ldContext": null,
+      "schema": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.processes.part1.requirements.core",
+      "name": "Core",
+      "abstract": "Core requirements class for OGC API \u2014 Processes Part 1. Specifies the fundamental operations a server must support: landing page, conformance declaration, process list, process description, process execution, job status, and job results.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-05-21T00:00:00Z",
+      "itemClass": "requirements-class",
+      "version": "2.0.0",
+      "clause-index": 7,
+      "normative": true,
+      "standardization-target": "Web API",
+      "sources": [
+        {
+          "title": "OGC API - Processes - Part 1: Core",
+          "link": "https://docs.ogc.org/is/18-062r2/18-062r2.html"
+        }
+      ],
+      "dependsOn": [
+        "bblocks://ogc.api.processes.v1.schemas.processSummary",
+        "bblocks://ogc.api.processes.v1.paths.Conformance",
+        "bblocks://ogc.api.processes.v1.schemas.processList",
+        "bblocks://ogc.api.processes.v1.paths.JobResult",
+        "bblocks://ogc.api.processes.v1.paths.ProcessList",
+        "bblocks://ogc.api.processes.v1.paths.Execution",
+        "bblocks://ogc.api.processes.v1.paths.LandingPage",
+        "bblocks://ogc.api.processes.v1.paths.ProcessDescription",
+        "bblocks://ogc.api.processes.v1.paths.Job"
+      ],
+      "tags": [
+        "ogcapi-processes",
+        "standard",
+        "requirements-class"
+      ],
+      "resources": [
+        {
+          "ref": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/core/requirements.yaml",
+          "role": "requirements",
+          "format": "application/yaml"
+        }
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-05-21",
+      "sourceFiles": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/core/",
+      "testResources": [
+        {
+          "id": "process-list-success",
+          "method": "Issue an HTTP GET request to the path `/processes`. Validate that the response has HTTP status code 200 and that the response body is a valid JSON document conforming to the processList schema (ogc.api.processes.v1.schemas.processList).\n",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/core/tests/process-list-success.json"
+        },
+        {
+          "id": "process-list-no-links-fail",
+          "method": "Validate that a processList response body without the required `links` property fails conformance with the processList schema. The validator SHALL report an error.\n",
+          "require-fail": true,
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/core/tests/process-list-no-links-fail.json"
+        }
+      ],
+      "validationPassed": false,
+      "testOutputs": "https://github.com/ogcincubator/ogcapi-processes-standard-as-bblocks/blob/master/build/tests/api/processes/part1/requirements/core/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/requirements/core/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/requirements/core/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.requirements.core"
+        }
+      },
+      "@id": "bblocks://ogc.api.processes.part1.requirements.core",
+      "@type": [
+        "bblocks:Requirements-class",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Core",
+      "ldContext": null,
+      "schema": null,
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://opengeospatial.github.io/bblocks-template/"
+        "@id": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.api.processes.part1.requirements.json",
+      "name": "JSON",
+      "abstract": "Requirements class for JSON encoding. Requires that all supported API endpoints respond with application/json when requested.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-05-21T00:00:00Z",
+      "itemClass": "requirements-class",
+      "version": "2.0.0",
+      "clause-index": 11,
+      "normative": true,
+      "standardization-target": "Web API",
+      "sources": [
+        {
+          "title": "OGC API - Processes - Part 1: Core",
+          "link": "https://docs.ogc.org/is/18-062r2/18-062r2.html"
+        }
+      ],
+      "dependsOn": [
+        "bblocks://ogc.api.processes.part1.requirements.core"
+      ],
+      "tags": [
+        "ogcapi-processes",
+        "standard",
+        "requirements-class"
+      ],
+      "resources": [
+        {
+          "ref": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/json/requirements.yaml",
+          "role": "requirements",
+          "format": "application/yaml"
+        }
+      ],
+      "shaclShapes": null,
+      "dateOfLastChange": "2026-05-21",
+      "sourceFiles": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/json/",
+      "testResources": [
+        {
+          "id": "json-content-type",
+          "method": "Issue an HTTP GET request to each of the following paths: `/`, `/conformance`, `/processes`, `/processes/{processID}`, `/jobs/{jobID}`. Validate that each response includes `Content-Type: application/json` (or a subtype thereof) when the request carries `Accept: application/json`.\n",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/requirements/json/tests/json-content-type.json"
+        }
+      ],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/ogcapi-processes-standard-as-bblocks/blob/master/build/tests/api/processes/part1/requirements/json/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/requirements/json/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/requirements/json/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.requirements.json"
+        }
+      },
+      "@id": "bblocks://ogc.api.processes.part1.requirements.json",
+      "@type": [
+        "bblocks:Requirements-class",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "JSON",
+      "ldContext": null,
+      "schema": null,
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/"
       }
     }
   ],
   "skos:hasTopConcept": [
     {
-      "@id": "bblocks://ogc.bbr.template.mySchema"
+      "@id": "bblocks://ogc.api.processes.part1.clauses.conventions"
     },
     {
-      "@id": "bblocks://ogc.bbr.template.myFeature"
+      "@id": "bblocks://ogc.api.processes.part1.clauses.references"
+    },
+    {
+      "@id": "bblocks://ogc.api.processes.part1.clauses.scope"
+    },
+    {
+      "@id": "bblocks://ogc.api.processes.part1.clauses.terms"
+    },
+    {
+      "@id": "bblocks://ogc.api.processes.part1.requirements.core"
+    },
+    {
+      "@id": "bblocks://ogc.api.processes.part1.requirements.json"
     }
   ]
 }
