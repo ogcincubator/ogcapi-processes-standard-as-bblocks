@@ -45,10 +45,10 @@
     dct:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/clauses/references/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/references/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.clauses.references> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.clauses.references> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/references/index.json> ] ;
     dct:hasVersion "2.0.0" ;
     dct:modified "2026-05-21"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/> ;
@@ -70,10 +70,10 @@
     rdfs:label "Scope" ;
     dct:abstract "Scope clause for OGC API — Processes Part 1: Core."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.clauses.scope> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/scope/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.clauses.scope> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/clauses/scope/index.md> ] ;
     dct:hasVersion "2.0.0" ;
@@ -94,12 +94,12 @@
     rdfs:label "Terms and Definitions" ;
     dct:abstract "Terms, definitions and abbreviated terms for OGC API — Processes Part 1: Core."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/terms/index.json> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.clauses.terms> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/clauses/terms/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.clauses.terms> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/terms/index.json> ] ;
     dct:hasVersion "2.0.0" ;
     dct:modified "2026-05-21"^^xsd:date ;
     skos:inScheme <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/> ;
@@ -121,12 +121,12 @@
     rdfs:label "JSON" ;
     dct:abstract "Requirements class for JSON encoding. Requires that all supported API endpoints respond with application/json when requested."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/requirements/json/index.md> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/requirements/json/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.requirements.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/requirements/json/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.requirements.json> ] ;
     dct:hasVersion "2.0.0" ;
     dct:modified "2026-05-21"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/18-062r2/18-062r2.html> ;
@@ -145,18 +145,18 @@
 
 <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Nc63f6e3125f443b2983b5354038c77a9 ;
+    prov:wasAttributedTo _:Nadddd8737e1746928ac358d8b6c4651c ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-05-21T23:41:54.268363"^^xsd:dateTime ;
-            prov:startedAtTime "2026-05-21T23:41:54.129404"^^xsd:dateTime ;
+            prov:endedAtTime "2026-05-22T07:46:57.851846"^^xsd:dateTime ;
+            prov:startedAtTime "2026-05-22T07:46:57.608215"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
                 [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:d04a598afecf0476eee6d8f75f4906a6192680e2" ;
+                    dct:hasVersion "git:c2e997e2d023d6ddea84936287f3bdea8c73f7d2" ;
                     rdfs:seeAlso <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/register.json> ] ;
-            prov:wasAssociatedWith _:Nc63f6e3125f443b2983b5354038c77a9 ] .
+            prov:wasAssociatedWith _:Nadddd8737e1746928ac358d8b6c4651c ] .
 
 <bblocks://ogc.api.processes.part1.requirements.core> a skos:Concept,
         dcat:Dataset,
@@ -165,12 +165,12 @@
     rdfs:label "Core" ;
     dct:abstract "Core requirements class for OGC API — Processes Part 1. Specifies the fundamental operations a server must support: landing page, conformance declaration, process list, process description, process execution, job status, and job results."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-05-21T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.requirements.core> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/requirements/core/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/requirements/core/index.md> ] ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/requirements/core/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/bblock/ogc.api.processes.part1.requirements.core> ] ;
     dct:hasVersion "2.0.0" ;
     dct:modified "2026-05-21"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/18-062r2/18-062r2.html> ;
@@ -213,7 +213,7 @@ in a Building Block, and the standards document is generated from the BB set.
 New BB types introduced: `requirements-class`, `clause`, `terms`, `references`.
 New `bblock.json` fields: `clause-index`, `normative`, `standardization-target`.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-05-21T23:41:53.851833"^^xsd:dateTime ;
+    dct:modified "2026-05-22T07:46:57.154155"^^xsd:dateTime ;
     owl:imports <https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://ogc.api.processes.part1.clauses.conventions>,
@@ -238,7 +238,7 @@ New `bblock.json` fields: `clause-index`, `normative`, `standardization-target`.
     foaf:homepage <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/> ;
     bblocks:hasValidationReport <https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/tests/report.html> .
 
-_:Nc63f6e3125f443b2983b5354038c77a9 a prov:Agent,
+_:Nadddd8737e1746928ac358d8b6c4651c a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.29" ;

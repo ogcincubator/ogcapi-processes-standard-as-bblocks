@@ -10,7 +10,7 @@
       "title": "Validation report for ogc.api.processes.part1.clauses.conventions - Conventions",
       "bblockName": "Conventions",
       "bblockId": "ogc.api.processes.part1.clauses.conventions",
-      "generated": "2026-05-21T23:41:54.084116+00:00",
+      "generated": "2026-05-22T07:46:57.561612+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -24,7 +24,7 @@
       "title": "Validation report for ogc.api.processes.part1.clauses.references - Normative References",
       "bblockName": "Normative References",
       "bblockId": "ogc.api.processes.part1.clauses.references",
-      "generated": "2026-05-21T23:41:54.087319+00:00",
+      "generated": "2026-05-22T07:46:57.564817+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -38,7 +38,7 @@
       "title": "Validation report for ogc.api.processes.part1.clauses.scope - Scope",
       "bblockName": "Scope",
       "bblockId": "ogc.api.processes.part1.clauses.scope",
-      "generated": "2026-05-21T23:41:54.090178+00:00",
+      "generated": "2026-05-22T07:46:57.567782+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -52,7 +52,7 @@
       "title": "Validation report for ogc.api.processes.part1.clauses.terms - Terms and Definitions",
       "bblockName": "Terms and Definitions",
       "bblockId": "ogc.api.processes.part1.clauses.terms",
-      "generated": "2026-05-21T23:41:54.093335+00:00",
+      "generated": "2026-05-22T07:46:57.570852+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -66,7 +66,7 @@
       "title": "Validation report for ogc.api.processes.part1.requirements.core - Core",
       "bblockName": "Core",
       "bblockId": "ogc.api.processes.part1.requirements.core",
-      "generated": "2026-05-21T23:41:54.102735+00:00",
+      "generated": "2026-05-22T07:46:57.580420+00:00",
       "result": false,
       "items": [
         {
@@ -242,7 +242,7 @@
       "title": "Validation report for ogc.api.processes.part1.requirements.json - JSON",
       "bblockName": "JSON",
       "bblockId": "ogc.api.processes.part1.requirements.json",
-      "generated": "2026-05-21T23:41:54.110838+00:00",
+      "generated": "2026-05-22T07:46:57.588863+00:00",
       "result": true,
       "items": [
         {

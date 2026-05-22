@@ -1,5 +1,5 @@
 Validation report for ogc.api.processes.part1.requirements.core - Core
-Generated 2026-05-21T23:41:54.102698+00:00
+Generated 2026-05-22T07:46:57.580383+00:00
 === JSON Schema ===
 
 ** Validation error **
