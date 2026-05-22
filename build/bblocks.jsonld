@@ -257,7 +257,7 @@
       }
     }
   ],
-  "modified": "2026-05-22T08:45:16.083916",
+  "modified": "2026-05-22T08:51:46.423046",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"25abca22c897dd633f68c669e182ee84446aa519",
@@ -543,15 +543,15 @@
         }
       ],
       "dependsOn": [
-        "bblocks://ogc.api.processes.v1.schemas.processSummary",
-        "bblocks://ogc.api.processes.v1.paths.Execution",
-        "bblocks://ogc.api.processes.v1.paths.JobResult",
         "bblocks://ogc.api.processes.v1.paths.Conformance",
-        "bblocks://ogc.api.processes.v1.paths.ProcessDescription",
+        "bblocks://ogc.api.processes.v1.paths.JobResult",
         "bblocks://ogc.api.processes.v1.paths.Job",
-        "bblocks://ogc.api.processes.v1.paths.LandingPage",
         "bblocks://ogc.api.processes.v1.paths.ProcessList",
-        "bblocks://ogc.api.processes.v1.schemas.processList"
+        "bblocks://ogc.api.processes.v1.schemas.processSummary",
+        "bblocks://ogc.api.processes.v1.schemas.processList",
+        "bblocks://ogc.api.processes.v1.paths.LandingPage",
+        "bblocks://ogc.api.processes.v1.paths.Execution",
+        "bblocks://ogc.api.processes.v1.paths.ProcessDescription"
       ],
       "tags": [
         "ogcapi-processes",
