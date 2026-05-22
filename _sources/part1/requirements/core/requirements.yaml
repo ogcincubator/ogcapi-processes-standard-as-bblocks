@@ -77,6 +77,16 @@ requirements:
     tested-by:
       - process-list-success.json
 
+  - id: core/process-description-inputs
+    level: SHALL
+    statement: >
+      Each entry in the `inputs` map of a process description SHALL conform to the
+      [inputDescription](bblocks://ogc.api.processes.v1.schemas.inputDescription) schema.
+    applies-to:
+      bblock: ogc.api.processes.v1.schemas.inputDescription
+      json-path: $
+    import-examples: 1
+
   - id: core/test-process
     level: SHALL
     condition: >
