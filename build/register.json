@@ -65,12 +65,12 @@
       }
     }
   ],
-  "modified": "2026-05-22T08:51:46.423046",
+  "modified": "2026-09-16T22:20:05.409749",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"25abca22c897dd633f68c669e182ee84446aa519",
-      "shortCommitId": "\"25abca",
-      "date": "2026-05-21T23:39:18+00:00\""
+      "commitId": "\"e9e9cb5c905d4e569b44b4816a663ec450322f6f",
+      "shortCommitId": "\"e9e9cb",
+      "date": "2026-09-14T10:12:51+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/ogcapi-processes-standard-as-bblocks",
@@ -104,13 +104,13 @@
       "sourceFiles": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/conventions/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/conventions/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/clauses/conventions/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/conventions/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -145,13 +145,13 @@
       "sourceFiles": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/references/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/references/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/clauses/references/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/references/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -179,13 +179,13 @@
       "sourceFiles": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/scope/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/scope/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/clauses/scope/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/scope/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -220,13 +220,13 @@
       "sourceFiles": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/_sources/part1/clauses/terms/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/terms/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/clauses/terms/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/clauses/terms/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -252,15 +252,15 @@
         }
       ],
       "dependsOn": [
-        "ogc.api.processes.v1.paths.Conformance",
-        "ogc.api.processes.v1.paths.JobResult",
-        "ogc.api.processes.v1.paths.Job",
-        "ogc.api.processes.v1.paths.ProcessList",
-        "ogc.api.processes.v1.schemas.processSummary",
-        "ogc.api.processes.v1.schemas.processList",
-        "ogc.api.processes.v1.paths.LandingPage",
-        "ogc.api.processes.v1.paths.Execution",
-        "ogc.api.processes.v1.paths.ProcessDescription"
+        "bblocks://ogc.api.processes.v1.paths.Execution",
+        "bblocks://ogc.api.processes.v1.paths.LandingPage",
+        "bblocks://ogc.api.processes.v1.paths.Conformance",
+        "bblocks://ogc.api.processes.v1.paths.JobResult",
+        "bblocks://ogc.api.processes.v1.schemas.processList",
+        "bblocks://ogc.api.processes.v1.schemas.processSummary",
+        "bblocks://ogc.api.processes.v1.paths.ProcessList",
+        "bblocks://ogc.api.processes.v1.paths.ProcessDescription",
+        "bblocks://ogc.api.processes.v1.paths.Job"
       ],
       "tags": [
         "ogcapi-processes",
@@ -293,13 +293,13 @@
       "validationPassed": false,
       "testOutputs": "https://github.com/ogcincubator/ogcapi-processes-standard-as-bblocks/blob/master/build/tests/api/processes/part1/requirements/core/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/requirements/core/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/requirements/core/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/requirements/core/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -325,7 +325,7 @@
         }
       ],
       "dependsOn": [
-        "ogc.api.processes.part1.requirements.core"
+        "bblocks://ogc.api.processes.part1.requirements.core"
       ],
       "tags": [
         "ogcapi-processes",
@@ -352,13 +352,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/ogcapi-processes-standard-as-bblocks/blob/master/build/tests/api/processes/part1/requirements/json/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/requirements/json/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/markdown/api/processes/part1/requirements/json/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/ogcapi-processes-standard-as-bblocks/build/generateddocs/json-full/api/processes/part1/requirements/json/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
