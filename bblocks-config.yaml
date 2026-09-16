@@ -20,4 +20,4 @@ identifier-prefix: ogc.api.processes.
 
 imports:
   - default
-  - https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json
+  - '@ogc/ogcapi-processes'
